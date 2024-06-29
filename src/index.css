@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ff-primary: "Oswald", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: 1.6rem;
+  font-weight: 400;
+  min-height: 100vh;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font: inherit;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.section {
+  max-width: 52rem;
+  margin: 0 auto;
+}

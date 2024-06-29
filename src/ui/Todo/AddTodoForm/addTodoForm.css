@@ -1,0 +1,35 @@
+/* Add Todo Form  */
+.form {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.form__input {
+  color: #828282;
+  border: 0.1rem solid #bdbdbd;
+  border-radius: 1.2rem;
+  display: block;
+  flex: 0.8;
+  text-transform: capitalize;
+  padding: 1rem 2rem;
+}
+
+.btn--submit {
+  cursor: pointer;
+  align-self: stretch;
+  color: #ffffff;
+  background-color: #2f80ed;
+  box-shadow: 0.4rem 0.4rem 0.8rem rgba(127, 177, 243, 0.4);
+  border-radius: 1.2rem;
+  display: block;
+  text-transform: capitalize;
+  transition: 0.3s all ease;
+  flex: 0.2;
+}
+
+.btn--submit:hover {
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(127, 177, 243, 0.2);
+  background-color: rgba(47, 129, 237, 0.9);
+}
