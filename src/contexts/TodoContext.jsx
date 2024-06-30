@@ -20,7 +20,6 @@ function todoReducer(state, action) {
         completed: false,
       };
       const updatedTodo = [...state.todos, newTodo];
-      localStorage.setItem("todos", JSON.stringify(updatedTodo));
 
       return { ...state, todos: updatedTodo };
 
@@ -34,7 +33,6 @@ function todoReducer(state, action) {
       const updatedTodos = state.todos.map((todo, i) =>
         i === index ? { ...todo, completed: !todo.completed } : todo,
       );
-      localStorage.setItem("todos", JSON.stringify(updatedTodos));
 
       return { ...state, todos: updatedTodos };
 
@@ -44,8 +42,6 @@ function todoReducer(state, action) {
       if (deleteTodoItem === -1) return state;
 
       const updatedTodosAfterDelete = state.todos.filter((todo) => todo.id !== deleteTodoItem.id);
-
-      localStorage.setItem("todos", JSON.stringify(updatedTodosAfterDelete));
 
       return { ...state, todos: updatedTodosAfterDelete };
 
@@ -60,8 +56,6 @@ function todoReducer(state, action) {
       const updatedTodosAfterEdit = state.todos.map((todo) =>
         todo.id === state.editTodoId ? updatedTodoToEdit : todo,
       );
-
-      localStorage.setItem("todos", JSON.stringify(updatedTodosAfterEdit));
 
       return {
         ...state,
